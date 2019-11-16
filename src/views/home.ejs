@@ -6,41 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fullstack Lab</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <h1>Bugs Report Tool</h1>
-    <p>Mark all the questions</p>
-
-    <form method="POST">
-
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" value="My Name">
-
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" value="myemail@email.com"> <br>
-
-        <label for="issueType">Type of report</label>
-        <select name="issueType" id="issueType">
-            <option value="CRITICAL">Critical</option>
-            <option value="BUG">Bug</option>
-            <option value="IMPROVEMENT">Improvement</option>
-        </select> <br>
+    <div class="p-3 mb-2 bg-dark text-white">
+        <div class="container">
 
 
+            <h1>Bugs Report Tool</h1>
+            <p>Mark all the questions</p>
 
-        <label for="howToReproduce">How to reproduce the bug</label>
-        <input type="text" id="howToReproduce" name="howToReproduce" value="After login is done">
+            <form method="POST">
 
-        <label for="output">What the output</label>
-        <input type="text" id="output" name="output" value="Error 404">
+                <div class="form-group">
 
-        <label for="correctOutput">What the correct output</label>
-        <input type="text" id="correctOutput" name="correctOutput" value="Show my profile"> <br>
+                    <div class="row">
 
-        <input type="submit" value="Send">
+                        <div class="col">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" value="My Name">
+                        </div>
 
-    </form>
+                        <div class="col">
+                            <div class="col-auto">
+
+                                <label for="email">E-mail</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">@</div>
+                                    </div>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        value="myemail@email.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <label for="issueType">Type of report</label>
+                            <select class="form-control" name="issueType" id="issueType">
+                                <option value="CRITICAL">Critical</option>
+                                <option value="BUG">Bug</option>
+                                <option value="IMPROVEMENT">Improvement</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="howToReproduce">How to reproduce the bug</label>
+                    <textarea class="form-control" id="howToReproduce" name="howToReproduce" cols="30"
+                        rows="3">After login is done</textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="output">What the output</label>
+                    <textarea class="form-control" id="output" name="output" cols="30" rows="3">Error 404</textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="correctOutput">What the correct output</label>
+                    <textarea class="form-control" id="correctOutput" name="correctOutput" cols="30"
+                        rows="3">Show my profile</textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <input type="submit" class="form-control" value="Send">
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
 
 </body>
 

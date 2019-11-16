@@ -45,9 +45,8 @@ app.post('/', async (req, res) => {
         console.log(err);
 
     }
-
-    //return res.send(req.body)
-    return res.send('Thanks for your help');
+    
+    return res.render('sucess');
 })
 
 app.listen(3000, (error) => {
