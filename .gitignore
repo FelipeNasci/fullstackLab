@@ -1,0 +1,6 @@
+/node_modules/*
+
+/src/testGoogleSpreadsheet.js
+
+package-lock.json
+
